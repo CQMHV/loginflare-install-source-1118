@@ -6,7 +6,7 @@
 
 ## 同步目标版本
 
-首个正式版本为 **0.99.0**，支持具有发布记录和私有实例存储的 23 项迁移基线（`aa10563825c7d7669e8be6d0ebab6aa35c84acf4`）及 27 项迁移基线（`3d721f99ee7de2cbf9471df298263fec9c9fb6a9`）。旧源码曾使用相同版本号，升级时按真实 Git 提交和迁移账本识别。维护者完成发行后，从上游选择固定标签。
+首个正式版本为 **0.99.1**，支持具有发布记录和私有实例存储的 23 项迁移基线（`aa10563825c7d7669e8be6d0ebab6aa35c84acf4`）及 27 项迁移基线（`3d721f99ee7de2cbf9471df298263fec9c9fb6a9`）。旧源码曾使用相同版本号，升级时按真实 Git 提交和迁移账本识别。维护者完成发行后，从上游选择固定标签。
 
 ## 从管理台准备更新
 
@@ -62,7 +62,7 @@ pnpm upgrade:verify --local --state work/upgrade-demo
 
 ## 迁移与自有修改
 
-`release.json` 固定官方版本和迁移摘要，`migrations/online.json` 登记审核过的在线兼容迁移。0.99.0 已验证 0024–0027 执行后，23 项基线旧 Worker 的密码登录、原会话、OIDC PKCE、UserInfo 和刷新令牌仍可用；当前 27 项基线也通过相同回归。该证据由 `scripts/upgrade-compatibility.mjs` 持续验证，深度修改的 Fork 需要单独验证。
+`release.json` 固定官方版本和迁移摘要，`migrations/online.json` 登记审核过的在线兼容迁移。0.99.1 已验证 0024–0027 执行后，23 项基线旧 Worker 的密码登录、原会话、OIDC PKCE、UserInfo 和刷新令牌仍可用；当前 27 项基线也通过相同回归。该证据由 `scripts/upgrade-compatibility.mjs` 持续验证，深度修改的 Fork 需要单独验证。
 
 下游自有迁移保留原名称、摘要和审批记录；例如验收环境的 `0024_acceptance_probe.sql` 不属于官方迁移。新增自有迁移须追加到完整历史，并在代表性数据及自己的上一版 Worker 验证后登记 SHA-256。顺序冲突或已执行文件被改动时发布阻断，不会自动重排、改名或删除记录。未经审核或不兼容的变更另走维护流程。
 

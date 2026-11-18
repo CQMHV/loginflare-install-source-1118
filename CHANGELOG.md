@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-## 0.99.0
+## 0.99.1
 
 - Use the same release build for the Cloudflare deployment button and explicit production builds. Complete first-admin setup through the installation page.
 - Show published updates in the admin console. A downstream maintainer can run the GitHub workflow to prepare a reviewable pull request from a fixed release tag, preserving downstream files and migration history.

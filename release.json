@@ -1,6 +1,6 @@
 {
     "format": 1,
-    "version": "0.99.0",
+    "version": "0.99.1",
     "upgradeFrom": [
         {
             "id": "installation-23",
@@ -121,6 +121,10 @@
         {
             "name": "0027_business_events.sql",
             "digest": "cfa053536344c2664da3e6f1eebe069b82d3425871e802b1a87fce0eb099af10"
+        },
+        {
+            "name": "0028_isolated_acceptance_marker.sql",
+            "digest": "2d8f65c9472410bbc63096b593a0d8d693cacdddb5a12dbe81d49957bda70ef2"
         }
     ]
 }
