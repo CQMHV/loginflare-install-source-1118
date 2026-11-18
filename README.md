@@ -1,3 +1,5 @@
+> Temporary install and update fixture. Versions 0.99.x are synthetic and are not Loginflare releases.
+
 # Loginflare
 
 An open-source account and identity management system built for Cloudflare.
