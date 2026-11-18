@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 0.99.2
+
+- Publish a synthetic version for checking the isolated downstream upgrade notice. No application or schema changes.
+
 ## 0.99.1
 
 - Use the same release build for the Cloudflare deployment button and explicit production builds. Complete first-admin setup through the installation page.

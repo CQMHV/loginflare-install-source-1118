@@ -84,3 +84,5 @@ Public image domains, PRIVATE isolation, issuer and existing bindings remain pro
 ## Upstream releases
 
 After notes, compatibility evidence and CI are ready, create the version tag at the exact `main` commit and manually run **Prepare source release**. It reruns full CI, the historical upgrade matrix and browser tests for that commit, then creates a source archive, `SHA256SUMS`, provenance and a draft Release. It never deploys a service or overwrites an existing Release. Review and publish the draft separately.
+
+Test fixture v0.99.2 is for checking the downstream update notification. It requires no new migration.

@@ -84,3 +84,5 @@ pnpm upgrade:verify --local --state work/upgrade-demo
 ## 上游发行
 
 维护者在版本说明、兼容性证据和全部 CI 就绪后，为准确的 `main` 提交创建版本标签，再手动运行 **Prepare source release**。工作流复跑同一提交的完整 CI、跨版本矩阵和浏览器测试，产出源码包、`SHA256SUMS`、来源信息及草稿 Release，不部署服务。检查草稿后再单独发布；工作流不覆盖已有 Release。
+
+测试版本 v0.99.2 用于检查下游更新提示，无新增数据库迁移。
